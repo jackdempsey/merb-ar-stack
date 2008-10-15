@@ -42,7 +42,7 @@ merb_spec = Gem::Specification.new do |s|
   s.homepage     = HOMEPAGE
   s.summary      = SUMMARY
   s.description  = SUMMARY
-  s.files        = %w(LICENSE README Rakefile) + Dir.glob("{lib}/**/*")
+  s.files        = %w(LICENSE README Rakefile Generators) + Dir.glob("{lib}/**/*")
   gems.each do |gem, version|
     s.add_dependency gem, version
   end
