@@ -10,8 +10,7 @@ module Merb
       end
 
       def self.common_templates_dir
-        File.expand_path(File.join(File.dirname(__FILE__), '..',
-                                   'templates', 'application', 'common'))
+        File.expand_path(File.join(File.dirname(__FILE__), 'templates', 'application', 'common'))
       end
 
       def destination_root
@@ -105,6 +104,6 @@ module Merb
       end
     end
 
-    add 'ar-app',   MerbStackGenerator
+    add 'ar-app',   MerbArStackGenerator
   end
 end
